@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="OrangeHRM Suite" preserve-order="true">
+  <test thread-count="5" name="Login Test">
+    <classes>
+      <class name="testcases.LoginTest"/>
+    </classes>
+  </test> <!-- Login Test -->
+  <test thread-count="5" name="Add Employee Test">
+    <classes>
+      <class name="testcases.AddEmployeeTest"/>
+    </classes>
+  </test> <!-- AddEmployee Test -->
+  <test thread-count="5" name="Immigration Test">
+    <classes>
+      <class name="testcases.AddEmployeeTest"/>
+    </classes>
+  </test> <!-- Immigration Test -->
+  <test thread-count="5" name="Job Test">
+    <classes>
+      <class name="testcases.JobTest"/>
+    </classes>
+  </test> <!-- Job Test -->
+</suite> <!-- OrangeHRM Suite -->

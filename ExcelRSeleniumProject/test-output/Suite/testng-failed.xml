@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="6" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="6" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="testcases.AddEmployeeTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="addEmployeeAndCreateCredentialsWithInvalidData"/>
+          <include name="addEmployeeAndCreateLoginDetails"/>
+          <include name="setup"/>
+          <include name="addNewEmployee"/>
+          <include name="createEmployeeWithBlankFirstnameAndLastName"/>
+          <include name="loginWithNewLoginCredentials"/>
+        </methods>
+      </class> <!-- testcases.AddEmployeeTest -->
+      <class name="testcases.LoginTest">
+        <methods>
+          <include name="loginWithValidUsernameAndInvalidPassword"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+          <include name="loginWithBlankUsernameAndInvalidPassword"/>
+          <include name="loginWithInvalidUsernameAndValidPassword"/>
+          <include name="loginWithValidUsernameAndValidPassword"/>
+          <include name="loginWithBlankUsernameAndBlankPassword"/>
+          <include name="loginWithInvalidUsernameAndInvalidPassword"/>
+          <include name="loginWithValidUsernameAndBlankPassword"/>
+        </methods>
+      </class> <!-- testcases.LoginTest -->
+      <class name="testcases.ImmigrationTest">
+        <methods>
+          <include name="addImmigrationDetailsWithVisa"/>
+          <include name="deleteExistingAttachmentUnderImmigrationByCheckbox"/>
+          <include name="downloadExistingAttachmentUnderImmigrationRecord"/>
+          <include name="addImmigrationDetailsWithoutPassportOrVisaNumber"/>
+          <include name="deleteImmigrationRecordUsingCheckbox"/>
+          <include name="addImmigrationDetailsWithPassport"/>
+          <include name="editExistingImmigrationDetails"/>
+          <include name="addAttachmentUnderImmigration"/>
+          <include name="replaceExistingAttachmentUnderImmigration"/>
+          <include name="deleteExistingAttachmentUnderImmigrationUsingDeleteIcon"/>
+          <include name="addImmigrationDetailsWhenExpiryDateLessthanIssueDate"/>
+          <include name="deleteImmigrationRecordWithDeleteIcon"/>
+          <include name="addMultipleImmigrationDetails"/>
+          <include name="teardown"/>
+          <include name="clickOnAddButtonWhileCreatingImmigrationDetails"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- testcases.ImmigrationTest -->
+      <class name="testcases.JobTest">
+        <methods>
+          <include name="activateEmployment"/>
+          <include name="teardown"/>
+          <include name="addEmploymentContractDetailsWhenContractStartDateGreaterThanEndDate"/>
+          <include name="deleteExistingEmploymentContractDetailsFile"/>
+          <include name="setup"/>
+          <include name="addAttachmentUnderJob"/>
+          <include name="terminateEmployment"/>
+          <include name="deleteExistingAttachmentUnderJobByCheckbox"/>
+          <include name="addEmploymentContractDetailsUnderJob"/>
+          <include name="changeJobDetails"/>
+          <include name="replaceExistingEmploymentContractDetailsFile"/>
+          <include name="downloadExistingAttachmentUnderImmigrationRecord"/>
+        </methods>
+      </class> <!-- testcases.JobTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
